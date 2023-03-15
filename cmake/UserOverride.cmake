@@ -7,8 +7,8 @@
 # variables.
 if (CMAKE_Fortran_COMPILER_ID STREQUAL "GNU")
     # gfortran
-    set(common "-Wall -Wextra -Wimplicit-interface -fPIC")
-    set(CMAKE_Fortran_FLAGS_RELEASE_INIT "${common} -O3 -march=native -ffast-math -funroll-loops")
+    set(common "-fPIC")
+    set(CMAKE_Fortran_FLAGS_RELEASE_INIT "${common} -O3 -ffast-math")
     set(CMAKE_Fortran_FLAGS_DEBUG_INIT   "${common} -g -fcheck=all -fbacktrace")
 elseif (CMAKE_Fortran_COMPILER_ID STREQUAL "Intel")
     # ifort

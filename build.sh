@@ -2,7 +2,7 @@
 
 set -ex
 
-FC=gfortran cmake .
+FC=/opt/nec/ve/bin/nfort cmake .
 make
 python create_model.py --models_dir "../gpt2/models" --model_size "124M"
 python encode_input.py \
