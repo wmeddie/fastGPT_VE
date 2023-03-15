@@ -1,4 +1,6 @@
-# fastGPT
+# fastGPT (For VE)
+
+This repository is a simple fork of fastGPT that runs on the VE.  With interesting results.
 
 The progression of GPT-2 codes from the original to "minimal", "nano" and
 "pico":
